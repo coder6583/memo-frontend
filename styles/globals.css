@@ -38,6 +38,14 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --white: #ffff;
+  --light-light-light-gray: #f6f6f6;
+  --light-light-gray: #eeeeee;
+  --light-gray: #dddd;
+  --gray: #bbbbbb;
+  --dark-gray: #999999;
+  --dark-dark-gray: #555555;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -77,6 +85,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Montserrat;
 }
 
 html,

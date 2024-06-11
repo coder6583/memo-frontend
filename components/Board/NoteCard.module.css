@@ -1,0 +1,51 @@
+.parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid var(--light-light-gray);
+  padding: 8px 24px;
+  background-color: var(--white);
+  transition: 0.2s;
+}
+
+.addIcon {
+  font-size: 32px;
+  color: var(--gray);
+}
+
+.title {
+  margin-top: 16px;
+  margin-left: 36px;
+}
+
+.name {
+  color: var(--dark-dark-gray);
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1px solid #00000000;
+  transition: 0.2s;
+}
+
+.date {
+  height: 12px;
+  opacity: 0;
+  color: var(--gray);
+  margin-top: 8px;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.parent:hover {
+  cursor: pointer;
+  background-color: var(--light-light-light-gray);
+}
+
+.parent:hover .name {
+  border-bottom: 1px solid var(--dark-dark-gray);
+}
+
+.parent:hover .date {
+  opacity: 100;
+}
