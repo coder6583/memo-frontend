@@ -1,9 +1,10 @@
 import { useState } from "react";
-import Filter from "../Board/Filter";
-import BoardHeader from "./BoardHeader";
 import styles from "./BoardLayout.module.css";
 import { ShortNoteType, TagType } from "@/types/types";
-import NoteList from "../Board/NoteList";
+import Notepad from "../Notepad/Notepad";
+import { BoardSider } from "./BoardSider";
+import Browser from "../Browser/Browser";
+import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
 
 export default function BoardLayout(): JSX.Element {
   const [tags, setTags] = useState<TagType[]>([
@@ -29,16 +30,23 @@ export default function BoardLayout(): JSX.Element {
   ]);
   return (
     <div className={styles.parent}>
-      <div className={styles.header}>
-        <BoardHeader />
-      </div>
+      {/* <div className={styles.side}>
+        <BoardSider />
+      </div> */}
       <div className={styles.main}>
-        <div className={styles.filter}>
-          <Filter tags={tags} />
-        </div>
-        <div className={styles.workspace}>
-          <NoteList notes={notes} />
-        </div>
+        <PanelGroup direction="horizontal">
+          <Panel defaultSize={50} minSize={30}>
+            <div className={styles.notepad}>
+              <Notepad />
+            </div>
+          </Panel>
+          <PanelResizeHandle className={styles.resizeHandle} />
+          <Panel defaultSize={50} minSize={30}>
+            <div className={styles.browser}>
+              <Browser />
+            </div>
+          </Panel>
+        </PanelGroup>
       </div>
     </div>
   );

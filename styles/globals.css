@@ -46,6 +46,8 @@
   --gray: #bbbbbb;
   --dark-gray: #999999;
   --dark-dark-gray: #555555;
+  --dark-dark-gray: #222222;
+  --theme: #0073cf;
 }
 
 @media (prefers-color-scheme: dark) {

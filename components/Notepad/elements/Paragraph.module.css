@@ -1,0 +1,7 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 30px;
+  padding: 3px 2px;
+}

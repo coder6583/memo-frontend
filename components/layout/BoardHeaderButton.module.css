@@ -1,0 +1,17 @@
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  border-radius: 8px;
+  color: var(--dark-dark-gray);
+  margin: 5px;
+}
+
+.parent:hover {
+  cursor: pointer;
+  background-color: var(--light-light-gray);
+}

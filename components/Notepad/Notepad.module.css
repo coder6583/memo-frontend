@@ -1,0 +1,12 @@
+.parent {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 80px;
+  padding-left: 64px;
+  padding-right: 64px;
+  outline: 0;
+}
+
+.editable {
+  outline: 0;
+}
