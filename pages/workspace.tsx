@@ -46,20 +46,8 @@ export const useCurrentInputContext = (): CurrentInputContextType => {
 
 const initialValue = [
   {
-    type: "h1",
-    children: [{ text: "A line of text in a h1." }],
-  },
-  {
-    type: "h2",
-    children: [{ text: "A line of text in a h2." }],
-  },
-  {
-    type: "h3",
-    children: [{ text: "A line of text in a h3." }],
-  },
-  {
     type: "paragraph",
-    children: [{ text: "A line of text in a paragraph." }],
+    children: [{ text: "" }],
   },
 ];
 

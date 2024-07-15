@@ -25,6 +25,18 @@
   color: var(--dark-dark-dark-gray);
 }
 
+.h1-selected-empty-element {
+  position: relative;
+}
+
+.h1-selected-empty-element:after {
+  content: "Heading 1";
+  color: var(--light-gray);
+  position: absolute;
+  top: 0;
+  cursor: text;
+}
+
 .heading2 {
   margin-top: 22.4px;
   padding: 3px 2px;
@@ -34,6 +46,18 @@
   color: var(--dark-dark-dark-gray);
 }
 
+.h2-selected-empty-element {
+  position: relative;
+}
+
+.h2-selected-empty-element:after {
+  content: "Heading 2";
+  color: var(--light-gray);
+  position: absolute;
+  top: 0;
+  cursor: text;
+}
+
 .heading3 {
   margin-top: 16px;
   padding: 3px 2px;
@@ -41,4 +65,16 @@
   font-weight: 600;
   line-height: 1.2;
   color: var(--dark-dark-dark-gray);
+}
+
+.h3-selected-empty-element {
+  position: relative;
+}
+
+.h3-selected-empty-element:after {
+  content: "Heading 3";
+  color: var(--light-gray);
+  position: absolute;
+  top: 0;
+  cursor: text;
 }

@@ -18,25 +18,46 @@ function Title(props: any): JSX.Element {
 
 function Heading1(props: any): JSX.Element {
   return (
-    <div className={styles.heading1} {...props.attribute}>
+    <h1
+      className={clsx(
+        styles.heading1,
+        (props.element.children[0].text as string) === "" &&
+          styles["h1-selected-empty-element"]
+      )}
+      {...props.attribute}
+    >
       {props.children}
-    </div>
+    </h1>
   );
 }
 
 function Heading2(props: any): JSX.Element {
   return (
-    <div className={styles.heading2} {...props.attribute}>
+    <h2
+      className={clsx(
+        styles.heading2,
+        (props.element.children[0].text as string) === "" &&
+          styles["h2-selected-empty-element"]
+      )}
+      {...props.attribute}
+    >
       {props.children}
-    </div>
+    </h2>
   );
 }
 
 function Heading3(props: any): JSX.Element {
   return (
-    <div className={styles.heading3} {...props.attribute}>
+    <h3
+      className={clsx(
+        styles.heading3,
+        (props.element.children[0].text as string) === "" &&
+          styles["h3-selected-empty-element"]
+      )}
+      {...props.attribute}
+    >
       {props.children}
-    </div>
+    </h3>
   );
 }
 
